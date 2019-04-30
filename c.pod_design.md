@@ -173,6 +173,10 @@ kubectl delete po nginx{1..3}
 ```bash
 kubectl run nginx --image=nginx:1.7.8 --replicas=2 --port=80
 ```
+```bash
+kubectl run nginx --image=nginx:1.7.8 --replicas=2 --port=80 --expose
+```
+** above creates deployment & service together **
 
 **However**, `kubectl run` for Deployments is Deprecated and will be removed in a future version. What you can do is:
 
